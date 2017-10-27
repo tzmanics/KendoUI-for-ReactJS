@@ -3,6 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "@progress/kendo-buttons-react-wrapper": "^2017.3.1026",
+    "@progress/kendo-charts-react-wrapper": "^2017.3.1026",
+    "@progress/kendo-dateinputs-react-wrapper": "^2017.3.1026",
+    "@progress/kendo-inputs-react-wrapper": "^2017.3.1026",
+    "@progress/kendo-theme-default": "^2.43.2",
+    "@progress/kendo-ui": "^2017.3.1026",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-scripts": "1.0.14"
