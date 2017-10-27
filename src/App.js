@@ -1,18 +1,36 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { DatePicker } from '@progress/kendo-dateinputs-react-wrapper';
+import '@progress/kendo-ui';
+import '@progress/kendo-theme-default/dist/all.css';
 
 class App extends Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      dateTime: new Date()
+    };
+    this.onchange = this.onchange.bind(this);
+  }
+
+  onchange(e) {
+    console.log(e.sender.value());
+    this.setState({
+      dateTime: e.sender.value()
+    });
+  }
+
   render() {
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+        <div className="date-picker">
+          <DatePicker
+            value={ this.dateTime }
+            min={ new Date(2017, 11, 1) }
+            max={ new Date(2018, 11, 1) }
+            format={ "yyyy/MM/dd" }
+            change={ this.onchange }
+          />
+        </div>
       </div>
     );
   }
