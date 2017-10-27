@@ -6,6 +6,7 @@
     "@progress/kendo-buttons-react-wrapper": "^2017.3.1026",
     "@progress/kendo-charts-react-wrapper": "^2017.3.1026",
     "@progress/kendo-dateinputs-react-wrapper": "^2017.3.1026",
+    "@progress/kendo-grid-react-wrapper": "^2017.3.1026",
     "@progress/kendo-inputs-react-wrapper": "^2017.3.1026",
     "@progress/kendo-theme-default": "^2.43.2",
     "@progress/kendo-ui": "^2017.3.1026",

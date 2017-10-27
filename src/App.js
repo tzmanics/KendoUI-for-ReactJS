@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import { DatePicker } from '@progress/kendo-dateinputs-react-wrapper';
+import { NumericTextBox } from '@progress/kendo-inputs-react-wrapper';
+import { Chart } from '@progress/kendo-charts-react-wrapper';
+import { Button } from '@progress/kendo-buttons-react-wrapper';
 import '@progress/kendo-ui';
 import '@progress/kendo-theme-default/dist/all.css';
 
@@ -31,6 +34,19 @@ class App extends Component {
             change={ this.onchange }
           />
         </div>
+        <div className="numeric-inputs">
+          <NumericTextBox
+            decimals={ 2 }
+            format='c0'
+            min={ 0 }
+            max={ 500 }
+            round={ true }
+            spinners={ true }
+            value={ 22 }
+          ></NumericTextBox>
+        </div>
+      <Chart series={[{ data: [1, 2, .5] }, { data: [.5, 1, 2] }]} />
+      <Button> Check Rates </Button>
       </div>
     );
   }
